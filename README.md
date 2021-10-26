@@ -1,2 +1,2 @@
 # myrepository
-c++
+Variant#1
