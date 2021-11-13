@@ -19,8 +19,8 @@ int main() {
     mf.open(file);//открыли файл
     string str;//переменная для считывания файла
     Vect a1{};
-    Vect maxright{};
-    Vect maxleft{};
+    Vect maxright{0,0};
+    Vect maxleft{0,0};
     Vect maxright1{};
     double cos_left = 1;
     double cos_right = 1;
