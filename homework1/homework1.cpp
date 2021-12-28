@@ -21,7 +21,7 @@ int main() {
     Vect a1{};
     Vect maxright{0,0};
     Vect maxleft{0,0};
-    Vect maxright1{};
+    Vect maxright1{0,0};
     double cos_left = 1;
     double cos_right = 1;
     int k = 0;
