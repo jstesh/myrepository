@@ -1,1 +1,1 @@
-add_executable(homework1 homework1.cpp in.txt)
+add_executable(homework1 homework1.cpp)
