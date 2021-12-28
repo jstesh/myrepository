@@ -64,9 +64,9 @@ int main() {
     else{
         cout <<  "Error";
     }
-    //if (k > 0){
-    //    maxright = {maxright1.x,maxright1.y};
-    //}
+    if (k > 0){
+        maxright = {maxright1.x,maxright1.y};
+    }
     cout << maxright.x <<" "<< maxright.y << "\n"; //координаты точки,составляющей с вектором направления максимальный угол справа
     cout << maxleft.x <<" "<< maxleft.y << "\n"; //координаты точки, составляющей максимальный угол с вектором направления слева
     mf.close();//закрыли файл
