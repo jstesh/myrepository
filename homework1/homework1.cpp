@@ -15,6 +15,7 @@ double cos1(Vect a, Vect b) {
 Vect maxright{0,0};
 Vect maxleft{0,0};
 Vect maxright1{0,0};
+int k = 0;
 //теперь считаем с текстового файла вектора
 int main() {
     string file = "in.txt";
@@ -24,7 +25,6 @@ int main() {
     Vect a1{};
     double cos_left = 1;
     double cos_right = 1;
-    int k = 0;
     if (mf.is_open()){
         int i = 0;
         while (getline(mf, str)){
