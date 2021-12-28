@@ -46,13 +46,13 @@ int main() {
                     k++;
                 }
                 else if (D > 0){ // точка лежит справа от направляющей прямой
-                    if(mn < cos_right){
+                    if(mn <= cos_right){
                         maxright={b.x,b.y};
                         cos_right =  mn;
                     }
                 }
                 else if (D < 0){ // точка лежит слева от прямой
-                    if(mn < cos_left) {
+                    if(mn <= cos_left) {
                         maxleft = {b.x, b.y};
                         cos_left = mn;
                     }
