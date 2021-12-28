@@ -15,7 +15,7 @@ int main() {
     double vy = 0;
     int length = 0;
     double t = 0;
-    double g = 9.8;
+    double g = 9.81;
     vector<double> x1;
     vector<double> h1;
     if (mf.is_open()){
