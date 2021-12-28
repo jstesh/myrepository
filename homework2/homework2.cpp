@@ -39,11 +39,13 @@ int main() {
     double s_x = 0;
     int j = 0;//номер участка
     int k = 0;
+    int kk = x1.size();
     double vx_first = vx;
     double h2 = 0;
     while (h > 0){
         if (vx==0){h = 0;}
         else {
+            if (j = kk){ break; }
             if (vx_first * vx > 0) { h2 = h1[j]; }
             if (vx_first * vx < 0) { h2 = h1[j - 1]; }
             if (j == 0) { s_x = x1[j]; }
