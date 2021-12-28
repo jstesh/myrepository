@@ -54,6 +54,7 @@ int main() {
             if ((h_act > h2)&& (vx_first * vx < 0)) { j = j-1; }
             if ((h_act <= h2) && (j != 0)) { vx = -vx; }
             if ((h_act <= h2) && (j == 0)) { h = 0; }
+            if (h_act <= 0) { h = 0; }
             if (h != 0) { h = h_act; }
             //cout << j << "\n";
         }
