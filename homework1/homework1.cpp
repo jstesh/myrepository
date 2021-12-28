@@ -12,6 +12,8 @@ struct Vect{
 double cos1(Vect a, Vect b) {
     return ((a.x * b.x + a.y * b.y)/(sqrt(a.x*a.x+a.y*a.y)*sqrt(b.x*b.x+b.y*b.y)));
 }
+Vect maxright{0,0};
+Vect maxleft{0,0};
 //теперь считаем с текстового файла вектора
 int main() {
     string file = "in.txt";
@@ -19,8 +21,6 @@ int main() {
     mf.open(file);//открыли файл
     string str;//переменная для считывания файла
     Vect a1{};
-    Vect maxright{0,0};
-    Vect maxleft{0,0};
     Vect maxright1{0,0};
     double cos_left = 1;
     double cos_right = 1;
@@ -67,8 +67,8 @@ int main() {
     if (k > 0){
         maxright = {maxright1.x,maxright1.y};
     }
+    mf.close();//закрыли файл  
     cout << maxright.x <<" "<< maxright.y << "\n"; //координаты точки,составляющей с вектором направления максимальный угол справа
     cout << maxleft.x <<" "<< maxleft.y << "\n"; //координаты точки, составляющей максимальный угол с вектором направления слева
-    mf.close();//закрыли файл
     return 0;
 }
