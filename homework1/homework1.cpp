@@ -32,9 +32,9 @@ int main() {
             if (i == 1) {
                 Vect a{stod(str.substr(0, str.find(' '))), stod(str.substr(str.find(' ') + 1))};
                 a1 = {a.x, a.y};
-                cout << a1.x << " ";
-                cout << a1.y;
-                cout << "\n";
+                //cout << a1.x << " ";
+                //cout << a1.y;
+                //cout << "\n";
             }
             else{
                 Vect b{stod(str.substr(0, str.find(' '))), stod(str.substr(str.find(' ') + 1))};
