@@ -44,6 +44,7 @@ int main() {
     double h2 = 0;
     while (h > 0){
         if (vx==0){h = 0;}
+        else if (kk=0){break;}
         else {
             if (j = kk){ break; }
             if (vx_first * vx > 0) { h2 = h1[j]; }
@@ -54,9 +55,10 @@ int main() {
             h_act = h + vy * t - (g * g * t * t) / 2;
             vy = vy - g * t;
             if ((h_act > h2)&& (vx_first * vx > 0)) { j++; }
-            if ((h_act > h2)&& (vx_first * vx < 0)) { j = j-1; }
+            if ((h_act > h2) && (j == 1)&&(vx_first * vx < 0)) { h = 0; }
+            if ((h_act > h2) && (vx_first * vx < 0)) { j = j-1; }
             if ((h_act <= h2) && (j != 0)) { vx = -vx; }
-            if ((h_act <= h2) && (j == 0)) { h = 0; }
+            //if ((h_act <= h2) && (j == 0)) { h = 0; }
             if (h_act <= 0) { h = 0; }
             if (h != 0) { h = h_act; }
             //cout << j << "\n";
