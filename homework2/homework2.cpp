@@ -54,7 +54,7 @@ int main() {
             if (j == 0) { s_x = x1[j]; }
             else { s_x = x1[j] - x1[j - 1]; }
             t = s_x / vx;
-            h_act = h + vy * t - (g * g * t * t) / 2;
+            h_act = h + vy * t - (g * t * t) / 2;
             vy = vy - g * t;
             if ((h_act > h2)&& (vx_first * vx > 0)) { j++; }
             if ((h_act > h2) && (j == 1)&&(vx_first * vx < 0)) { h = 0; j--;}
