@@ -47,10 +47,6 @@ int main() {
                     maxright1 = {b.x,b.y};
                     k++;
                 }
-                if ((D == 0) && (a1.x * b.x > 0 )&&(a1.y * b.y > 0)) { 
-                    maxleft1 = {b.x,b.y};
-                    k1++;
-                }
                 else if (D > 0){ // точка лежит справа от направляющей прямой
                     if(mn <= cos_right){
                         maxright={b.x,b.y};
@@ -72,9 +68,6 @@ int main() {
     }
     if (k > 0){
         maxright = {maxright1.x,maxright1.y};
-    }
-     if (k1 > 0){
-        maxleft = {maxleft1.x,maxleft1.y};
     }
     mf.close();//закрыли файл  
     cout << "Leftmost: "<< maxleft.x <<" "<< maxleft.y << "\n"; //координаты точки, составляющей максимальный угол с вектором направления слева
