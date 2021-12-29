@@ -18,6 +18,7 @@ int main(int argc, char** argv)  {
     int length = 0;
     double t = 0;
     double g = 9.81;
+    int kk = 0;
     vector<double> x1;
     vector<double> h1;
     if (mf.is_open()){
@@ -34,6 +35,7 @@ int main(int argc, char** argv)  {
                 if ( (str.length() > 0)){
                 x1.push_back(stod(str.substr(0, str.find(' '))));
                 h1.push_back(stod(str.substr(str.find(' ') + 1)));
+                kk++;    
                 }
             }
 
@@ -42,8 +44,8 @@ int main(int argc, char** argv)  {
     double h_act = 0;
     double s_x = 0;
     int j = 0;//номер участка
-    int k = 0;
-    int kk = x1.size();
+    //int k = 0;
+    //int kk = x1.size();
     double vx_first = vx;
     double h2 = 0;
     while (h > 0){
