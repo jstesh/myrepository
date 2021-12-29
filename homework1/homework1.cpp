@@ -47,7 +47,7 @@ int main() {
                     maxright1 = {b.x,b.y};
                     k++;
                 }
-                if ((D == 0) && (a1.x * b.x > 0 )) { 
+                if ((D == 0) && (a1.x * b.x > 0 )&&(a1.y * b.y > 0)) { 
                     maxleft1 = {b.x,b.y};
                     k1++;
                 }
