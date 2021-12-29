@@ -4,8 +4,10 @@
 #include <vector>
 using namespace std;
 //теперь считаем с текстового файла вектора
-int main() {
-    string file = "in.txt";
+int main(int argc, char** argv)  {
+    if (argc != 2) { cout << "error";}
+    else{
+    string file = "argv";
     ifstream mf;
     mf.open(file);//открыли файл
     string str;//переменная для считывания файла
@@ -67,5 +69,6 @@ int main() {
         }
     }
     cout << j;
+    }
     return 0;
 }
