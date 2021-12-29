@@ -56,8 +56,8 @@ int main() {
             vy = vy - g * t;
             if ((h_act > h2)&& (vx_first * vx > 0)) { j++; }
             if ((h_act > h2) && (j == 1)&&(vx_first * vx < 0)) { h = 0; }
-            if ((h_act > h2) && (vx_first * vx < 0)) { j = --; }
-            if ((h_act <= h2) && (j != 0)) { vx = -vx; j=-- }
+            if ((h_act > h2) && (vx_first * vx < 0)) { j--; }
+            if ((h_act <= h2) && (j != 0)) { vx = -vx; j--;}
             if ((h_act <= h2) && (j == 0)) { h = 0; }
             if (h_act <= 0) { h = 0; }
             if (h != 0) { h = h_act; }
