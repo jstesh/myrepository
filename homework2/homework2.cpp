@@ -29,7 +29,7 @@ int main() {
                 vy = stod(str.substr(str.find(' ') + 1));
             }
             else {
-                if ( (line.length() > 0)){
+                if ( (str.length() > 0)){
                 x1.push_back(stod(str.substr(0, str.find(' '))));
                 h1.push_back(stod(str.substr(str.find(' ') + 1)));
                 }
